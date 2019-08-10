@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_16756befab654227a2cea3bad832fb9c {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_16756befab654227a2cea3bad832fb9c" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_16756befab654227a2cea3bad832fb9c = L.map(
+        'map_16756befab654227a2cea3bad832fb9c', {
+        center: [37.566345, 126.977893],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_6fd373c504ea41028f572e53320e4775 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_16756befab654227a2cea3bad832fb9c);
+    
+        var marker_271ef69093a74d768790afaac2949f97 = L.marker(
+            [37.5567851, 126.9237568],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_16756befab654227a2cea3bad832fb9c);
+        
+    
+
+                var icon_14c1f0b6e4374083b7dd11bbc2d8a446 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_271ef69093a74d768790afaac2949f97.setIcon(icon_14c1f0b6e4374083b7dd11bbc2d8a446);
+            
+    
+            var popup_2619f04c2df04d9198101293b517e0b8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7c04aa6eb64e43fdac706e4a7d79979d = $(`<div id="html_7c04aa6eb64e43fdac706e4a7d79979d" style="width: 100.0%; height: 100.0%;">신촌/ 홍대주변</div>`)[0];
+                popup_2619f04c2df04d9198101293b517e0b8.setContent(html_7c04aa6eb64e43fdac706e4a7d79979d);
+            
+
+            marker_271ef69093a74d768790afaac2949f97.bindPopup(popup_2619f04c2df04d9198101293b517e0b8)
+            ;
+
+            
+        
+    
+        var marker_e8636c12498a49ab889c246f5adb30e5 = L.marker(
+            [37.4979462, 127.0254323],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_16756befab654227a2cea3bad832fb9c);
+        
+    
+
+                var icon_f11b27fd739b42be8ba18d967ca267c1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e8636c12498a49ab889c246f5adb30e5.setIcon(icon_f11b27fd739b42be8ba18d967ca267c1);
+            
+    
+            var popup_0821c673ef1a473cbe2375e574b46cda = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_485e0e903e684663beaed8680c4d4b7c = $(`<div id="html_485e0e903e684663beaed8680c4d4b7c" style="width: 100.0%; height: 100.0%;">강남역</div>`)[0];
+                popup_0821c673ef1a473cbe2375e574b46cda.setContent(html_485e0e903e684663beaed8680c4d4b7c);
+            
+
+            marker_e8636c12498a49ab889c246f5adb30e5.bindPopup(popup_0821c673ef1a473cbe2375e574b46cda)
+            ;
+
+            
+        
+    
+        var marker_597f73fd34904d858f0cf0a568742067 = L.marker(
+            [37.5345372, 126.9923903],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_16756befab654227a2cea3bad832fb9c);
+        
+    
+
+                var icon_296046351fa34d83bc6ea5196ef62ad3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_597f73fd34904d858f0cf0a568742067.setIcon(icon_296046351fa34d83bc6ea5196ef62ad3);
+            
+    
+            var popup_b5ee6e6724e347668837bbb7a57a587b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5a5be21bfe0f4579aebfb995e8a29493 = $(`<div id="html_5a5be21bfe0f4579aebfb995e8a29493" style="width: 100.0%; height: 100.0%;">이태원 (이태원 세계 음식거리  한남동)</div>`)[0];
+                popup_b5ee6e6724e347668837bbb7a57a587b.setContent(html_5a5be21bfe0f4579aebfb995e8a29493);
+            
+
+            marker_597f73fd34904d858f0cf0a568742067.bindPopup(popup_b5ee6e6724e347668837bbb7a57a587b)
+            ;
+
+            
+        
+</script>
